@@ -48,6 +48,7 @@
           </div>
        </div>
     </div>
+</body>
 <style>
   #error {
     background-color: #ffffffdd;
@@ -106,7 +107,6 @@
       cursor: pointer;
     }
 </style>
-</body>
 <script>
   document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
     if(event.detail.status === 'failed'){
@@ -139,7 +139,7 @@
             modal.style.display = "none";
           }
         }
-        
+
         function message() {
             console.log("hello");
               modal.style.display = "block";
