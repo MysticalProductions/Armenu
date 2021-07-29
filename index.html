@@ -48,13 +48,8 @@
           </div>
        </model-viewer>
     </div>
-<script type="text/javascript">
-  function message() {
-              modal.style.display = "block";
-        }
-</script>
-</body>
-<style>
+
+    <style>
   #error {
     background-color: #ffffffdd;
     border-radius: 16px;
@@ -112,6 +107,13 @@
       cursor: pointer;
     }
 </style>
+<script type="text/javascript">
+  function message() {
+              modal.style.display = "block";
+        }
+</script>
+</body>
+
 <script>
    document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
     if(event.detail.status === 'failed'){
@@ -123,7 +125,7 @@
     }
     });
 
-       var modal = document.getElementById("myModal");
+        var modal = document.getElementById("myModal");
  
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
